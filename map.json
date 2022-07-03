@@ -833,7 +833,7 @@
         {
          "columns":16,
          "firstgid":11940,
-         "image":"..\/old_worktest\/tilesets\/GK_JO_C.png",
+         "image":"tilesets\/GK_JO_C.png",
          "imageheight":512,
          "imagewidth":512,
          "margin":0,
@@ -846,7 +846,7 @@
         {
          "columns":78,
          "firstgid":12196,
-         "image":"..\/old_worktest\/tilesets\/MainTileMap.png",
+         "image":"tilesets\/MainTileMap.png",
          "imageheight":928,
          "imagewidth":2496,
          "margin":0,
@@ -859,7 +859,7 @@
         {
          "columns":8,
          "firstgid":14458,
-         "image":"..\/old_worktest\/tilesets\/GK_JO_A5.png",
+         "image":"tilesets\/GK_JO_A5.png",
          "imageheight":512,
          "imagewidth":256,
          "margin":0,
@@ -872,7 +872,7 @@
         {
          "columns":16,
          "firstgid":14586,
-         "image":"..\/old_worktest\/tilesets\/GK_JO_B.png",
+         "image":"tilesets\/GK_JO_B.png",
          "imageheight":512,
          "imagewidth":512,
          "margin":0,
