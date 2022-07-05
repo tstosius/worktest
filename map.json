@@ -610,7 +610,7 @@
                          "value":"https:\/\/github.com\/tstosius\/worktest\/blob\/master\/tilesets\/rooster.mp3?raw=true"
                         }],
                  "rotation":0,
-                 "type":"",
+                 "type":"area",
                  "visible":true,
                  "width":86.3333333333331,
                  "x":454.666666666667,
