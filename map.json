@@ -595,9 +595,14 @@
                  "name":"cat",
                  "properties":[
                         {
+                         "name":"audioLoop",
+                         "type":"string",
+                         "value":"true"
+                        }, 
+                        {
                          "name":"audioVolume",
                          "type":"string",
-                         "value":"0.7"
+                         "value":"1.0"
                         }, 
                         {
                          "name":"playAudio",
