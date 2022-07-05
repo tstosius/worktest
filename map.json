@@ -715,7 +715,7 @@
                         {
                          "name":"url",
                          "type":"string",
-                         "value":"<iframe width=\"920\" height=\"518\" src=\"https:\/\/www.youtube.com\/embed\/7tNtU5XFwrU\" title=\"NCS 24\/7 - Copyright Free Music Livestream \ud83c\udfb5 @NoCopyrightSounds EDM, Gaming, Trap, House, Dubstep\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen><\/iframe>"
+                         "value":"https:\/\/www.youtube.com\/embed\/7tNtU5XFwrU"
                         }],
                  "rotation":0,
                  "type":"website",
