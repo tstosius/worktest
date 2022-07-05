@@ -561,16 +561,6 @@
                          "name":"meetingRoomLabel",
                          "type":"string",
                          "value":"Siegesstrasse"
-                        }, 
-                        {
-                         "name":"openWebsite",
-                         "type":"string",
-                         "value":"https:\/\/www.youtube.com\/embed\/dO_DwW3Ufag"
-                        }, 
-                        {
-                         "name":"openWebsiteWidth",
-                         "type":"string",
-                         "value":"0"
                         }],
                  "rotation":0,
                  "type":"area",
