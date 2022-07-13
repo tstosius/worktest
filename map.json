@@ -964,11 +964,11 @@
                  "id":49,
                  "name":"bellMessage",
                  "rotation":0,
-                 "type":"",
+                 "type":"area",
                  "visible":true,
                  "width":90.6241482692832,
-                 "x":734.532570182611,
-                 "y":673.207958571818
+                 "x":740.532570182611,
+                 "y":699.207958571818
                 }],
          "opacity":1,
          "type":"objectgroup",
@@ -1253,7 +1253,7 @@
          "y":0
         }],
  "nextlayerid":62,
- "nextobjectid":51,
+ "nextobjectid":52,
  "orientation":"orthogonal",
  "properties":[
         {
