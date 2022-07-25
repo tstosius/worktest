@@ -818,8 +818,58 @@
                  "y":56.5
                 }, 
                 {
+                 "height":52.4666121559009,
+                 "id":49,
+                 "name":"bellMessage",
+                 "rotation":0,
+                 "type":"area",
+                 "visible":true,
+                 "width":90.6241482692832,
+                 "x":740.532570182611,
+                 "y":699.207958571818
+                }],
+         "opacity":1,
+         "type":"objectgroup",
+         "visible":true,
+         "x":0,
+         "y":0
+        }, 
+        {
+         "draworder":"topdown",
+         "id":62,
+         "name":"configuration",
+         "objects":[
+                {
                  "height":0,
-                 "id":47,
+                 "id":52,
+                 "name":"bell",
+                 "point":true,
+                 "properties":[
+                        {
+                         "name":"bell",
+                         "type":"bool",
+                         "value":true
+                        }, 
+                        {
+                         "name":"bellSound",
+                         "type":"string",
+                         "value":"https:\/\/github.com\/tstosius\/worktest\/blob\/master\/tilesets\/rooster.mp3?raw=true"
+                        }, 
+                        {
+                         "name":"soundRadius",
+                         "type":"int",
+                         "value":200
+                        }],
+                 "rotation":0,
+                 "type":"variable",
+                 "visible":true,
+                 "width":0,
+                 "x":840,
+                 "y":607
+                }, 
+                {
+                 "height":0,
+                 "id":53,
                  "name":"door",
                  "point":true,
                  "properties":[
@@ -862,47 +912,8 @@
                  "type":"variable",
                  "visible":true,
                  "width":0,
-                 "x":784.442448594005,
-                 "y":604.14454479194
-                }, 
-                {
-                 "height":0,
-                 "id":48,
-                 "name":"bell",
-                 "point":true,
-                 "properties":[
-                        {
-                         "name":"bell",
-                         "type":"bool",
-                         "value":true
-                        }, 
-                        {
-                         "name":"bellSound",
-                         "type":"string",
-                         "value":"https:\/\/github.com\/tstosius\/worktest\/blob\/master\/tilesets\/rooster.mp3?raw=true"
-                        }, 
-                        {
-                         "name":"soundRadius",
-                         "type":"int",
-                         "value":200
-                        }],
-                 "rotation":0,
-                 "type":"variable",
-                 "visible":true,
-                 "width":0,
-                 "x":822.519487598801,
-                 "y":605.025347506132
-                }, 
-                {
-                 "height":52.4666121559009,
-                 "id":49,
-                 "name":"bellMessage",
-                 "rotation":0,
-                 "type":"area",
-                 "visible":true,
-                 "width":90.6241482692832,
-                 "x":740.532570182611,
-                 "y":699.207958571818
+                 "x":791,
+                 "y":611
                 }],
          "opacity":1,
          "type":"objectgroup",
@@ -1150,11 +1161,6 @@
                  "name":"bellVariable",
                  "type":"string",
                  "value":"bell"
-                }, 
-                {
-                 "name":"zone",
-                 "type":"string",
-                 "value":"door_open_zone_A"
                 }],
          "type":"tilelayer",
          "visible":true,
@@ -1252,8 +1258,8 @@
          "x":0,
          "y":0
         }],
- "nextlayerid":62,
- "nextobjectid":52,
+ "nextlayerid":63,
+ "nextobjectid":54,
  "orientation":"orthogonal",
  "properties":[
         {
