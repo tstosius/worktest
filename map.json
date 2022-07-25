@@ -675,7 +675,7 @@
                         {
                          "name":"playAudio",
                          "type":"string",
-                         "value":"https:\/\/github.com\/tstosius\/worktest\/blob\/master\/tilesets\/rooster.mp3?raw=true"
+                         "value":".\/tilesets\/rooster.mp3"
                         }],
                  "rotation":0,
                  "type":"area",
@@ -853,7 +853,7 @@
                         {
                          "name":"bellSound",
                          "type":"string",
-                         "value":"https:\/\/github.com\/tstosius\/worktest\/blob\/master\/tilesets\/rooster.mp3?raw=true"
+                         "value":".\/tilesets\/rooster.mp3"
                         }, 
                         {
                          "name":"soundRadius",
