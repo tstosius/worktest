@@ -675,7 +675,7 @@
                         {
                          "name":"playAudio",
                          "type":"string",
-                         "value":".\/tilesets\/rooster.mp3"
+                         "value":"rooster.mp3"
                         }],
                  "rotation":0,
                  "type":"area",
@@ -853,7 +853,7 @@
                         {
                          "name":"bellSound",
                          "type":"string",
-                         "value":".\/tilesets\/rooster.mp3"
+                         "value":".\/rooster.mp3"
                         }, 
                         {
                          "name":"soundRadius",
