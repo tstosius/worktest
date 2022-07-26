@@ -11,13 +11,24 @@ WA.onInit().then(() => {
     console.log('Scripting API ready');
     console.log('Player tags: ',WA.player.tags)
 
-    WA.room.onEnterLayer('clockZone').subscribe(() => {
-        const today = new Date();
-        const time = today.getHours() + ":" + today.getMinutes();
-        currentPopup = WA.ui.openPopup("clockPopup","It's " + time,[]);
-    })
-
-    WA.room.onLeaveLayer('clockZone').subscribe(closePopUp)
+    WA.room.onEnterLayer('votePos').subscribe(() => {
+		(WA.state.votePos as number) ++;
+	})
+	WA.room.onLeaveLayer('votePos').subscribe(()  => {
+		(WA.state.votePos as number) --;
+	})
+	WA.room.onEnterLayer('voteNeg').subscribe(()  => {
+		(WA.state.voteNeg as number) ++;
+	})
+	WA.room.onLeaveLayer('voteNeg').subscribe(() => {
+		(WA.state.voteNeg as number) --;
+	})
+	WA.room.onEnterLayer('voteNeut').subscribe(() => {
+		(WA.state.voteNeut as number) ++;
+	})
+	WA.room.onLeaveLayer('voteNeut').subscribe(() => {
+		(WA.state.voteNeut as number) --;
+	})
 
     // The line below bootstraps the Scripting API Extra library that adds a number of advanced properties/features to WorkAdventure
     bootstrapExtra().then(() => {
@@ -26,11 +37,5 @@ WA.onInit().then(() => {
 
 }).catch(e => console.error(e));
 
-function closePopUp(){
-    if (currentPopup !== undefined) {
-        currentPopup.close();
-        currentPopup = undefined;
-    }
-}
 
 export {};
