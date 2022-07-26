@@ -1170,6 +1170,12 @@
                  "height":52.4666121559009,
                  "id":49,
                  "name":"bellMessage",
+                 "properties":[
+                        {
+                         "name":"allowApi",
+                         "type":"bool",
+                         "value":true
+                        }],
                  "rotation":0,
                  "type":"area",
                  "visible":true,
@@ -1232,7 +1238,7 @@
                  "y":256
                 }, 
                 {
-                 "height":80,
+                 "height":103,
                  "id":61,
                  "name":"voteRes",
                  "properties":[
