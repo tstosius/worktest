@@ -29,26 +29,26 @@ WA.onInit().then(() => {
 		(WA.state.votePos as number) --;
 	})
 	WA.room.onEnterLayer('voteNeg').subscribe(()  => {
-        console.log("VotePos: ", WA.state.voteNeg);
+        console.log("voteNeg: ", WA.state.voteNeg);
 		(WA.state.voteNeg as number) ++;
 	})
 	WA.room.onLeaveLayer('voteNeg').subscribe(() => {
-        console.log("VotePos: ", WA.state.voteNeg);
-        if(WA.state.votePos as number === 0) return ;
+        console.log("voteNeg: ", WA.state.voteNeg);
+        if(WA.state.voteNeg as number === 0) return ;
 		(WA.state.voteNeg as number) --;
 	})
 	WA.room.onEnterLayer('voteNeut').subscribe(() => {
-        console.log("VotePos: ", WA.state.voteNeut);
+        console.log("voteNeut: ", WA.state.voteNeut);
 		(WA.state.voteNeut as number) ++;
 	})
 	WA.room.onLeaveLayer('voteNeut').subscribe(() => {
-        console.log("VotePos: ", WA.state.voteNeut);
-        if(WA.state.votePos as number === 0) return ;
+        console.log("voteNeut: ", WA.state.voteNeut);
+        if((WA.state.voteNeut as number) === 0) return ;
 		(WA.state.voteNeut as number) --;
 	})
 
     WA.room.onEnterLayer('voteReset').subscribe(() => {
-        currentPopup = WA.ui.openPopup("resetPopup","Do you want to reset the poll?", buttons);
+        currentPopup = WA.ui.openPopup("resetPopup","Soll das Voting zurückgesetzt werden?", buttons);
     })
     WA.room.onLeaveLayer('voteReset').subscribe(closePopUp)
 
@@ -56,7 +56,6 @@ WA.onInit().then(() => {
     bootstrapExtra().then(() => {
         console.log('Scripting API Extra ready');
     }).catch(e => console.error(e));
-
 }).catch(e => console.error(e));
 
 function closePopUp(){
