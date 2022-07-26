@@ -2,7 +2,7 @@
 
 import { bootstrapExtra } from "@workadventure/scripting-api-extra";
 import { ButtonDescriptor } from "@workadventure/iframe-api-typings/Api/iframe/Ui/ButtonDescriptor";
-
+import {Popup} from "@workadventure/iframe-api-typings/Api/iframe/Ui/Popup"
 console.log('Script started successfully');
 
 // let currentPopup: any = undefined;
@@ -47,10 +47,13 @@ WA.onInit().then(() => {
 		(WA.state.voteNeut as number) --;
 	})
 
+    let voteResetPopup: Popup;
     WA.room.onEnterLayer('voteReset').subscribe(() => {
-        WA.ui.openPopup("resetPopup","Soll das Voting zurückgesetzt werden?", buttons);
+        voteResetPopup = WA.ui.openPopup("resetPopup","Soll das Voting zurückgesetzt werden?", buttons);
     })
-    // WA.room.onLeaveLayer('voteReset').subscribe(closePopUp)
+    WA.room.onLeaveLayer('voteReset').subscribe(() => {
+        voteResetPopup.close();
+    });
 
     // The line below bootstraps the Scripting API Extra library that adds a number of advanced properties/features to WorkAdventure
     bootstrapExtra().then(() => {
@@ -58,11 +61,5 @@ WA.onInit().then(() => {
     }).catch(e => console.error(e));
 }).catch(e => console.error(e));
 
-// function closePopUp(){
-//     if (currentPopup !== undefined) {
-//         currentPopup.close();
-//         currentPopup = undefined;
-//     }
-// }
 
 export {};
