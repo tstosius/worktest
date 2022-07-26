@@ -20,21 +20,27 @@ WA.onInit().then(() => {
     console.log('Player tags: ',WA.player.tags)
 
     WA.room.onEnterLayer('votePos').subscribe(() => {
+        console.log("votePos Zone Entered");
 		(WA.state.votePos as number) ++;
 	})
 	WA.room.onLeaveLayer('votePos').subscribe(()  => {
+        console.log("votePos Zone Left");
 		(WA.state.votePos as number) --;
 	})
 	WA.room.onEnterLayer('voteNeg').subscribe(()  => {
+        console.log("voteNeg Zone Entered");
 		(WA.state.voteNeg as number) ++;
 	})
 	WA.room.onLeaveLayer('voteNeg').subscribe(() => {
+        console.log("voteNeg Zone Left");
 		(WA.state.voteNeg as number) --;
 	})
 	WA.room.onEnterLayer('voteNeut').subscribe(() => {
+        console.log("voteNeut Zone Entered");
 		(WA.state.voteNeut as number) ++;
 	})
 	WA.room.onLeaveLayer('voteNeut').subscribe(() => {
+        console.log("voteNeut Zone Left");
 		(WA.state.voteNeut as number) --;
 	})
 
