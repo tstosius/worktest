@@ -10,7 +10,7 @@ const  buttons: ButtonDescriptor[] = [
     {
         label: 'Reset',
         className: 'error',
-        callback: () => WA.state.votevarPositive = WA.state.votevarNegative = WA.state.votevarNeutral = 0,
+        callback: () => WA.state.votePos = WA.state.voteNeg = WA.state.voteNeut = 0,
     },
 ]
 
@@ -20,27 +20,30 @@ WA.onInit().then(() => {
     console.log('Player tags: ',WA.player.tags)
 
     WA.room.onEnterLayer('votePos').subscribe(() => {
-        console.log("votePos Zone Entered");
+        console.log("VotePos: ", WA.state.votePos);
 		(WA.state.votePos as number) ++;
 	})
 	WA.room.onLeaveLayer('votePos').subscribe(()  => {
-        console.log("votePos Zone Left");
+        console.log("VotePos: ", WA.state.votePos);
+        if(WA.state.votePos as number === 0) return ;
 		(WA.state.votePos as number) --;
 	})
 	WA.room.onEnterLayer('voteNeg').subscribe(()  => {
-        console.log("voteNeg Zone Entered");
+        console.log("VotePos: ", WA.state.voteNeg);
 		(WA.state.voteNeg as number) ++;
 	})
 	WA.room.onLeaveLayer('voteNeg').subscribe(() => {
-        console.log("voteNeg Zone Left");
+        console.log("VotePos: ", WA.state.voteNeg);
+        if(WA.state.votePos as number === 0) return ;
 		(WA.state.voteNeg as number) --;
 	})
 	WA.room.onEnterLayer('voteNeut').subscribe(() => {
-        console.log("voteNeut Zone Entered");
+        console.log("VotePos: ", WA.state.voteNeut);
 		(WA.state.voteNeut as number) ++;
 	})
 	WA.room.onLeaveLayer('voteNeut').subscribe(() => {
-        console.log("voteNeut Zone Left");
+        console.log("VotePos: ", WA.state.voteNeut);
+        if(WA.state.votePos as number === 0) return ;
 		(WA.state.voteNeut as number) --;
 	})
 
