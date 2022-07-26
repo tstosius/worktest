@@ -44,10 +44,10 @@ WA.onInit().then(() => {
 		(WA.state.voteNeut as number) --;
 	})
 
-    WA.room.onEnterLayer('resetVote').subscribe(() => {
+    WA.room.onEnterLayer('voteReset').subscribe(() => {
         currentPopup = WA.ui.openPopup("resetPopup","Do you want to reset the poll?", buttons);
     })
-    WA.room.onLeaveLayer('resetVote').subscribe(closePopUp)
+    WA.room.onLeaveLayer('voteReset').subscribe(closePopUp)
 
     // The line below bootstraps the Scripting API Extra library that adds a number of advanced properties/features to WorkAdventure
     bootstrapExtra().then(() => {
