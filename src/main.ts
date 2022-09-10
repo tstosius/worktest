@@ -61,10 +61,10 @@ WA.onInit().then(() => {
     })
 
     let voteResetPopup: Popup;
-    WA.room.onEnterLayer('voteReset').subscribe(() => {
+    WA.room.onEnterLayer('voteRes').subscribe(() => {
         voteResetPopup = WA.ui.openPopup('resetPopup', 'Soll das Voting zurückgesetzt werden?', buttons);
-    })
-    WA.room.onLeaveLayer('voteReset').subscribe(() => {
+    });
+    WA.room.onLeaveLayer('voteRes').subscribe(() => {
         voteResetPopup.close();
     });
 
